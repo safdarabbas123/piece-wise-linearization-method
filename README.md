@@ -4,3 +4,4 @@ This method is commonly used in numerical analysis and optimization to simplify 
 
 The basic idea behind piecewise linearization is to divide the nonlinear function into smaller segments or intervals and approximate each segment with a linear function. 
 These linear functions are then combined to form a piecewise linear approximation of the original nonlinear function.
+[![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](https://opensource.org/licenses/MIT)
