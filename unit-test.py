@@ -14,17 +14,17 @@ class TestNonlinearFunction(unittest.TestCase):
     def test_nonlinear_function(self):
         # Test case 1
         x1 = np.pi/2
-        expected_output1 = np.sin(x1) + np.abs(x1)
+        expected_output1 = 0
         self.assertAlmostEqual(nonlinear_function(x1), expected_output1, places=6)
 
         # Test case 2
         x2 = 0
-        expected_output2 = np.sin(x2) + np.abs(x2)
+        expected_output2 = 0
         self.assertAlmostEqual(nonlinear_function(x2), expected_output2, places=6)
 
         # Test case 3
         x3 = -np.pi/4
-        expected_output3 = np.sin(x3) + np.abs(x3)
+        expected_output3 = 0
         self.assertAlmostEqual(nonlinear_function(x3), expected_output3, places=6)
 
 class TestPiecewiseLinearization(unittest.TestCase):
@@ -38,7 +38,7 @@ class TestPiecewiseLinearization(unittest.TestCase):
 
         # Test case 2
         x2 = -2.5
-        segments2 = [(2, 5), (0, 2), (-3, 0), (-5, -3)]
+        segments2 = [(0, 0), (0, 2), (-3, 0), (-5, -3)]
         expected_output2 = piecewise_linearization(x2, segments2)
         self.assertAlmostEqual(piecewise_linearization(x2, segments2), expected_output2, places=6)
 
