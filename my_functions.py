@@ -10,7 +10,7 @@ import matplotlib.pyplot as plt
 
 def nonlinear_function(x):
     """Nonlinear function to be approximated."""
-    return np.sin(x) + np.abs(x)
+    return np.sin(x)+np.abs(x)
 
 def piecewise_linearization(x, segments):
     """
